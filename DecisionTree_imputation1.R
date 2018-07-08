@@ -21,18 +21,6 @@ library("dplyr")
 ipums <- get(load("IPUMS/ipums.Rdata"))
 
 
-# Taking random sample from data set for subset ---------------------------------------------------------------------------------------
-my_rows <- sample(1:nrow(ipums), 500, replace = F)
-
-
-# Creating subsets --------------------------------------------------------------------------------------------------------------------
-subset_IPUMS <- ipums[my_rows, c(1:11)]
-subset_MCAR <- DT_MCAR5.1[my_rows, c(1:11)]
-View(subset_MCAR)
-
-subset <- DT_MCAR2.1[(1:500),]
-
-
 # Training, testing, predicting and imputing -----------------------------------------------------------------------------------------
 
 # Setting correct and total to '0' 
