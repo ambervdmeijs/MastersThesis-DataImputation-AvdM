@@ -21,7 +21,6 @@ library("dplyr")
 sub_ipums10 <- get(load(file = "sub_ipums10.Rdata"))
 
 
-
 # Training, testing, predicting and imputing -----------------------------------------------------------------------------------------
 
 # Setting correct and total to '0' 
