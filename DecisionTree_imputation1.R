@@ -17,9 +17,8 @@ library("plyr")
 library("dplyr")
 
 
-
 ## Loading MCAR data frames and ipums data set ----------------------------------------------------------------------------------------------------
-ipums <- get(load("input/ipums.Rdata"))
+ipums <- get(load("IPUMS/ipums.Rdata"))
 
 
 # Taking random sample from data set for subset ---------------------------------------------------------------------------------------
